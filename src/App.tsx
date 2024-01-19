@@ -3,6 +3,7 @@ import { Lr1 } from "./Lr1";
 import { Lr2 } from "./Lr2";
 import { Lr3 } from "./Lr3";
 import { Navbar } from "./Navbar";
+import { CourseWork } from "./courseWork/CourseWork";
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 						<Route path="/lr1" element={<Lr1 />} />
 						<Route path="/lr2" element={<Lr2 />} />
 						<Route path="/lr3" element={<Lr3 />} />
+						<Route path="/courseWork" element={<CourseWork />} />
 						<Route path="*" element={<Navigate to="lr1" />} />
 					</Routes>
 				</div>

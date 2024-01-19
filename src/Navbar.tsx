@@ -87,6 +87,19 @@ export const Navbar: FC = () => {
 								ЛР 3
 							</NavLink>
 						</li>
+						<li>
+							<NavLink
+								to="/courseWork"
+								className={({ isActive }) =>
+									clsx(
+										"block py-2 pl-3 pr-4 rounded md:border-0 md:p-0",
+										isActive ? "text-blue-500" : "text-white"
+									)
+								}
+							>
+								Курсовая работа
+							</NavLink>
+						</li>
 					</ul>
 				</div>
 			</div>
